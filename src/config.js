@@ -49,5 +49,6 @@ module.exports = {
   route: getNormalizeRoute(),
   disableIndexes: url.searchParams.get('disableIndexes') !== null,
   directoryIndex: url.searchParams.get('route') || 'index.html',
-  debug: url.searchParams.get('debug') !== null
+  debug: url.searchParams.get('debug') !== null,
+  readwrite: url.searchParams.get('readwrite') !== null,
 };

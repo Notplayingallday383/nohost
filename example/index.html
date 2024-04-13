@@ -1,13 +1,37 @@
-<!doctype HTML>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>nohost</title>
-    </head>
-    <body>
-        <p>Browse filesystem at <a href="/fs">/fs</a></p>
-        <!-- Pull in Filer so we can write some files -->
-        <script src="/assets/libs/filer.min.js"></script>
-        <!-- NOTE: use of module here to use workbox-window -->
-        <script type="module" src="./index.js"></script>
-    </body>
+  <head>
+    <title>nohost</title>
+  </head>
+  <body>
+    <p>Browse filesystem at <a href="/fs">/fs</a></p>
+    <!-- Pull in Filer so we can write some files -->
+    <script src="/assets/libs/filer.min.js"></script>
+    <!-- NOTE: use of module here to use workbox-window -->
+    <script type="module" src="./index.js"></script>
+    <!-- Output console for requests -->
+    <textarea id="console" rows="10" cols="50"></textarea>
+    <!-- File methods -->
+    <div>
+      <!-- Button to test GET request -->
+      <button id="get">GET</button>
+      <!-- Button to test GET request -- JSON -->
+      <button id="getjson">GET JSON</button>
+      <!-- Button to test PUT request -->
+      <button id="put">PUT</button>
+      <!-- Button to test PUT request -- File touch -->
+      <button id="puttouch">PUT TOUCH</button>
+      <!-- Button to test DELETE request -->
+      <button id="delete">DELETE</button>
+    </div>
+    <!-- Folder methods -->
+    <div>
+      <!-- Button to test GET request -- FOLDER -- JSON -->
+      <button id="getfolder">GET FOLDER</button>
+      <!-- Button to test PUT request -- FOLDER -->
+      <button id="putfolder">PUT FOLDER</button>
+      <!-- Button to test DELETE request -- FOLDER -->
+      <button id="deletefolder">DELETE FOLDER</button>
+    </div>
+  </body>
 </html>
