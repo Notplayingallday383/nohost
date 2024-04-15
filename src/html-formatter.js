@@ -95,7 +95,7 @@ function formatDir(route, dirPath, entries) {
   const url = encodeURI(route + parent);
   const header = `
     <!DOCTYPE html>
-    <html><head><title>Index of ${dirPath}</title><link href="./nohost.css" rel="stylesheet" /><</head>
+    <html><head><title>Index of ${dirPath}</title><link href="./nohost.css" rel="stylesheet" /></head>
     <body><h1>Index of ${dirPath}</h1>
     <table><tr><th><img src='${blank}' alt='[ICO]'></th>
     <th><b>Name</b></th><th><b>Last modified</b></th>
