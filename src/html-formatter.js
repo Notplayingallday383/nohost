@@ -45,6 +45,7 @@ function format404(url) {
     <!DOCTYPE html>
     <html><head>
     <title>404 Not Found</title>
+    <link href="./nohost.css" rel="stylesheet" />
     </head><body>
     <h1>Not Found</h1>
     <p>The requested URL ${url} was not found on this server.</p>
@@ -68,6 +69,7 @@ function format500(path, err) {
     <!DOCTYPE html>
     <html><head>
     <title>500 Internal Server Error</title>
+    <link href="./nohost.css" rel="stylesheet" /><
     </head><body>
     <h1>Internal Server Error</h1>
     <p>The server encountered an internal error while attempting to access ${path}.</p>
@@ -93,7 +95,7 @@ function formatDir(route, dirPath, entries) {
   const url = encodeURI(route + parent);
   const header = `
     <!DOCTYPE html>
-    <html><head><title>Index of ${dirPath}</title></head>
+    <html><head><title>Index of ${dirPath}</title><link href="./nohost.css" rel="stylesheet" /><</head>
     <body><h1>Index of ${dirPath}</h1>
     <table><tr><th><img src='${blank}' alt='[ICO]'></th>
     <th><b>Name</b></th><th><b>Last modified</b></th>
